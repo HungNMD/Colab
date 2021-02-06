@@ -21,11 +21,15 @@ sudo apt install nautilus nano -y
 sudo adduser HNM chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
-printf "\nError Occured " >&2
+printf "\nError Occurred " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
 read -p "Paste Here: " CRP
 su - HNM -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
+#! Add some side-load soft here
+wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_3.3.5.40925-bionic_amd64.deb
+sudo dpkg --install insync_3.3.5.40925-bionic_amd64.deb
+
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
