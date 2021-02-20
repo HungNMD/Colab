@@ -27,9 +27,12 @@ read -p "Paste Here: " CRP
 su - HNM -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 #! Add some side-load soft here
-wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_3.3.5.40925-bionic_amd64.deb
-sudo dpkg --install insync_3.3.5.40925-bionic_amd64.deb
 
+#! Insync
+#! wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_3.3.5.40925-bionic_amd64.deb
+#! sudo dpkg --install insync_3.3.5.40925-bionic_amd64.deb
+
+#! Sys-monitor
 sudo apt-get install gnome-system-monitor
 
 if sudo apt-get upgrade &> /dev/null
