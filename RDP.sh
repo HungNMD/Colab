@@ -40,6 +40,10 @@ wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.t
 sudo tar -xJf xdm-setup-7.2.11.tar.xz
 sudo bash install.sh
 
+#! Media Info
+sudo apt-get install mediainfo mediainfo-gui
+
+
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
