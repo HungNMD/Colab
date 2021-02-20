@@ -35,6 +35,11 @@ printf 'Check https://remotedesktop.google.com/access/ \n\n'
 #! Sys-monitor
 sudo apt-get install gnome-system-monitor
 
+#! XDM
+wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
+sudo tar -xJvf xdm-setup-7.2.11.tar.xz
+sudo bash install.sh
+
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
