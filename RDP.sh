@@ -36,9 +36,9 @@ printf 'Check https://remotedesktop.google.com/access/ \n\n'
 sudo apt-get install gnome-system-monitor
 
 #! XDM
-wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
-sudo tar -xJf xdm-setup-7.2.11.tar.xz
-sudo bash install.sh
+#wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
+#sudo tar -xJf xdm-setup-7.2.11.tar.xz
+#sudo bash install.sh
 
 #! Media Info
 sudo apt-get install mediainfo mediainfo-gui
